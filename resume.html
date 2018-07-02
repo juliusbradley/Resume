@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Resume</title>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+    <style>
+        html {
+            background: url("bluecubes.jpg") no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        }
+
+        ul {
+            color: white;
+            font-family: Arial;
+            margin: 0px;
+            padding: 0px;
+            list-style: none;
+        }
+
+        ul li {
+            float: left;
+            width: 200px;
+            height: 25px;
+            color: yellow;
+            font-style: bold;
+            opacity: .8;
+            text-align: center;
+            font-size: 20px;
+            margin-right: 250px;
+        }
+
+        ul li p {
+            text-decoration: none;
+            color: white;
+            display: block;
+            font-size: 15px;
+        }
+
+        ul li:hover {
+            background-color: deepskyblue;
+            color: black;
+        }
+
+        ul li ul li {
+            display: none;
+        }
+
+        ul li:hover ul li {
+            display: block;
+            margin-top: 300px;
+            width: 250px
+        }
+
+        #name {
+            font-family: :Arial;
+            font-size: 100px;
+            color: white;
+            position: fixed;
+            top: 20%;
+            left: 50%;
+            margin-top: -100px;
+            margin-left: -250px;
+            text-shadow: 4px 4px 8px black;
+        }
+
+        #summary {
+            display: none;
+            color: yellow;
+            font-size: 20px;
+            position: absolute;
+            top: 30%;
+            left:35%
+        }
+
+        #name p:hover {
+            text-shadow: 4px 4px 8px deepskyblue;
+            display: block
+        }
+
+        #icons {
+            position: absolute;
+            top: 85%;
+            left:50%
+        }
+    </style>
+
+    <ul>
+        <li><a>Tech Skills </a>
+            <ul>
+                <li>
+                    <p><b> Languages, Frameworks & Libraries:</b> JavaScript,
+                      Ruby on Rails, HTML5, CSS, jQuery, Ajax, Bootstrap,
+                      React.js, Python, Node.js, Express.js <br><br>
+                        <b>Databases: </b>PostgreSQL, ActiveRecord<br><br>
+                        <b>Deployment & Development Tools:</b> Heroku, Git, GitHub
+                        <br><br>
+                        <b>Platforms:</b> Linux (Ubuntu), Windows
+                    </p>
+                </li>
+            </ul>
+        </li>
+        <li><a>Project Highlights </a>
+            <ul>
+                <li>
+                    <p><u> VanTechWeb</u><br><br> Group project that consisted
+                      of developing a web application that functions as a search
+                       tool for tech startups in the Vancouver area. Our group
+                        used Agile methodology to plan out our project and extensively
+                        used Git to make contributions to the final product.
+                        Functionality includes user authentication,
+                         image uploading, search tool, administrator dashboard,
+                         and geolocation.<br><br>
+                        <b>Technologies: Ruby on Rails, JavaScript, HTML, CSS,
+                         Git, Materialize, ActiveRecord, Google Maps API</b><br><br>
+                        <u>Amped</u><br><br> Web application that allows
+                        users to utilize the computer’s internal microphone
+                        to make a recording. The user has a sound visualizer
+                        to monitor the microphone input levels. After the
+                        recording is finished,the user can save it to their
+                        computer. This is a Single Page Application primarily
+                        constructed with JavaScript<br><br>
+                        <b>Technogies: JavaScript, Express.js, HTML, CSS,
+                           MediaRecorder API</b>
+                    </p>
+                </li>
+            </ul>
+        </li>
+        <li><a>Education </a>
+            <ul>
+                <li>
+                    <p><b>Certificate of Full-Stack Web Development</b><br><br>
+                      CodeCore Developer Bootcamp: Feb 2017 – May 2017<br><br>
+                        <b>Bachelors of Arts Communications and Economics</b><br>
+                        <br> University of Massachusetts: <br>Sept 2004 - Dec 2008
+                    </p>
+                </li>
+            </ul>
+        </li>
+        <li><a>Work Experience </a>
+            <ul>
+                <li>
+                    <p><b>Maven Scout, Oliver Parks, Sans Consulting,
+                      Nigel Frank</b><br>
+                        <b>IT Recruiter</b><br>
+                        <u>Sept 2011 –Dec 2016   New York/San Francisco</u><br>
+                        <p>3 years of experience as an agency recruiter and 2
+                          years as an independent freelance recruiter focused on
+                          the areas of Microsoft Dynamics and ERPs</p>
+                        <p>Identified prospective Microsoft Dynamics clients,
+                          cold called executives, negotiated contracts, and
+                          established business relationships with over 500 companies
+                        </p>
+                        <p>Successfully placed 40 candidates in various sectors
+                          of IT including software development, manufacturing,
+                           investment banking, medical, and energy industries.</p>
+                    </p>
+                </li>
+            </ul>
+        </li>
+    </ul>
+
+</head>
+
+<body>
+
+    <div id="name">
+        <p>JULIUS BRADLEY </p>
+      </div>
+        <div id ="summary">
+            <p>Junior web developer aspiring to gain professional experience
+               that will augment my growth in computer programming</p>
+    </div>
+
+    <div id="icons">
+        <center>
+            <a href="http://github.com/juliusbradley">
+                <img src="git.png" style="width:100px; height:100px"></a>
+            <a href="http://linkedin.com/in/juliusbradley">
+                <img src="link.png" style="width:100px; height:100px"></a>
+        </center>
+    </div>
+
+    <script>
+
+    $("#name").hover(function(){
+        $("#summary").fadeToggle();
+    });
+
+    </script>
+
+</body>
+
+</html>
